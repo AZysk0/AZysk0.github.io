@@ -1,0 +1,103 @@
+/* main.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* display: flex; 
+    align-items: flex-start; */
+}
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    z-index: 1;
+    position: absolute;
+}
+
+.profile-picture {
+    margin-right: 20px; /* Spacing between picture and bio */
+}
+
+.profile-picture img {
+    margin-right: 20px; /* Spacing between picture and bio */
+    width: 70px; /* Adjust width to be slightly larger than the image */
+    height: 70px; /* Adjust height to be slightly larger than the image */
+    background-color: #fff; /* Background color for the border effect */
+    border-radius: 50%; /* Make it circular */
+    /* padding: 5px; */
+    transition: all 0.3s ease;
+}
+
+.profile-picture img:hover {
+    margin-right: 20px; /* Spacing between picture and bio */
+    width: 65px; /* Adjust width to be slightly larger than the image */
+    height: 65px; /* Adjust height to be slightly larger than the image */
+    background-color: #2ed3ec; /* Background color for the border effect */
+    border-radius: 50%; /* Make it circular */
+    padding: 3px;
+}
+
+.sidebar p {
+    margin-bottom: 15px;
+}
+
+
+.contacts {
+    margin-top: 20px; /* Spacing between bio and contacts */
+}
+
+.contacts a {
+    color: #fff; /* White color for icons */
+    font-size: 24px; /* Adjust icon size */
+    margin: 0 10px; /* Spacing between icons */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.contacts a:hover {
+    color: #2ed3ec; /* Change color on hover */
+}
+
+#animationCanvas {
+    /* border: 2px solid black; */
+    flex: 1; /* Take up remaining space */
+    width: 1920px;
+    height: 1080px;
+    z-index: 0; /* Ensure canvas is behind sidebar */
+    position: absolute;
+}
+
+#boids-wrapper {
+    position: relative;
+    /* display: flex; */
+    align-items: flex-end;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+    max-height: 100%;
+    max-height: 100vh;
+    max-width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  
+  #boids {
+    position: absolute;
+    height: 100%;
+    height: 100vh;
+    width: 100%;
+    width: 100vw;
+    max-height: 100%;
+    max-height: 100vh;
+    max-width: 100%;
+    max-width: 100vw;
+    z-index: 0;
+  }
+
