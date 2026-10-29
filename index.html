@@ -2,52 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name='freelancehunt' content='317b6e00dc47d0c'>
-    <title>AZysk0</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="freelancehunt" content="317b6e00dc47d0c">
+    <title>Artem Zysko</title>
+    <meta name="description" content="PhD student in Mathematics. Math modeling, LaTeX, Python data analysis, machine learning and help with student assignments, plus notes on dynamical systems and control theory.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <div class="sidebar">
-        <!-- <h2>AZysk0</h2> -->
-        <div class="profile-picture">
-            <img src="assets/kurisu_chibi.jpg" alt="">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Artem Zysko</a>
+            <nav class="site-nav">
+                <a href="#about">About</a>
+                <a href="#what-i-do">What I do</a>
+                <a href="#cv">CV</a>
+                <a href="blog/index.html">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-        <hr>
-        <p>Добрий день! Мене звати Артем.</p>
-        <p>Я студент аспірантури за спеціальністю <strong>Е7 — Математика</strong></p>
-        <p>Набираю учнів 7-9 класів для індивідуальних онлайн-занять з математики (підготовка до ДПА або просто підтягнути знання, покращити оцінки)</p>
-        <p>Досвіду роботи зі школярами у мене поки що немає, проте активно готуюсь і сподіваюсь незабаром набрати перших учнів.</p>
-        <p>Також виконую студентські роботи (лабораторні, розрахукові, домашні завдання) з 2021 року</p>
-        
-        <p><strong>Освіта:</strong></p>
-        <ul>
-            <li>КПІ ім. Ігоря Сікорського, факультет біомедичної інженерії, спеціальність Комп’ютерні науки (122) — бакалавр, 2023 р.</li>
-            <li>Київський національний університет ім. Тараса Шевченка, механіко-математичний факультет, спеціальність Математика — магістр, 2025 р.</li>
-        </ul>
+    </header>
 
-        <p><strong>Наукові інтереси:</strong></p>
-        <ul>
-            <li>Диференціальні рівняння</li>
-            <li>Теорія керування</li>
-            <li>Комп’ютерний зір</li>
-        </ul>
-        <p><strong>Технічний стек:</strong> Python, PyTorch, NumPy, SciPy, Scikit-learn, OpenCV, Matplotlib, Pandas, SQL, Git, LaTeX.</p>
+    <main>
+        <section class="hero">
+            <canvas id="hero-canvas" aria-hidden="true"></canvas>
+            <div class="container hero-content">
+                <img class="avatar" src="assets/kurisu_chibi.jpg" alt="Artem's avatar" width="112" height="112">
+                <h1>Hi, I'm Artem.</h1>
+                <p class="tagline">PhD student in Mathematics. I do math modeling, data analysis and machine learning in Python, and write about dynamical systems and control theory.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="https://t.me/math_prog_help" target="_blank" rel="noopener"><i class="fab fa-telegram-plane" aria-hidden="true"></i> Message me on Telegram</a>
+                    <a class="button" href="blog/index.html">Read the blog</a>
+                </div>
+            </div>
+        </section>
 
-        <hr>
-        <div class="contacts">
-            <a href="https://t.me/math_prog_help" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-            <a href="https://www.fiverr.com/azysk0" target="_blank"><i class="fab fa-fonticons-fi"></i></a>
-            <a href="https://github.com/AZysk0" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.kaggle.com/artemzysko" target="_blank"><i class="fab fa-kaggle"></i></a>
+        <section id="about" class="container section">
+            <h2>About</h2>
+            <p>I'm a PhD student in Mathematics (specialty E7). I came to mathematics from computer science: I did my bachelor's at Igor Sikorsky Kyiv Polytechnic Institute and my master's at the Faculty of Mechanics and Mathematics of Taras Shevchenko National University of Kyiv.</p>
+            <p>My research is in dynamical systems: impulsive dynamical systems, control theory and global attractors. I also write a lot of code, mostly in Python with the scientific stack.</p>
+        </section>
+
+        <section id="what-i-do" class="container section">
+            <h2>What I do</h2>
+            <p>Most of my time goes to research, but I also take on work like this. If you need something done, message me on Telegram.</p>
+            <div class="cards">
+                <article class="card">
+                    <h3><i class="fa-solid fa-square-root-variable" aria-hidden="true"></i> Math modeling &amp; LaTeX</h3>
+                    <p>Numerical simulation of differential equations and dynamical systems with SciPy. Typesetting papers, theses and formula-heavy documents in LaTeX.</p>
+                </article>
+                <article class="card">
+                    <h3><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Python &amp; data analysis</h3>
+                    <p>Scripts, data cleaning, analysis and plots with pandas, NumPy and Matplotlib, plus small automation tasks.</p>
+                </article>
+                <article class="card">
+                    <h3><i class="fa-solid fa-brain" aria-hidden="true"></i> ML &amp; computer vision</h3>
+                    <p>Training and evaluating models with PyTorch and scikit-learn, and image processing with OpenCV.</p>
+                </article>
+                <article class="card">
+                    <h3><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Student assignments</h3>
+                    <p>Lab work, calculation assignments and homework in mathematics and programming. I've been doing this since 2021.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="cv" class="container section">
+            <h2>CV</h2>
+
+            <h3>Education</h3>
+            <ol class="timeline">
+                <li>
+                    <span class="when">Now</span>
+                    <div>
+                        <strong>PhD in Mathematics</strong> (E7, in progress)
+                    </div>
+                </li>
+                <li>
+                    <span class="when">2025</span>
+                    <div>
+                        <strong>MSc in Mathematics</strong><br>
+                        Taras Shevchenko National University of Kyiv, Faculty of Mechanics and Mathematics
+                    </div>
+                </li>
+                <li>
+                    <span class="when">2023</span>
+                    <div>
+                        <strong>BSc in Computer Science</strong> (122)<br>
+                        Igor Sikorsky Kyiv Polytechnic Institute, Faculty of Biomedical Engineering
+                    </div>
+                </li>
+            </ol>
+
+            <h3>Research interests</h3>
+            <ul class="chips">
+                <li>Impulsive dynamical systems</li>
+                <li>Control theory</li>
+                <li>Global attractors</li>
+            </ul>
+
+            <h3>Tech stack</h3>
+            <ul class="chips">
+                <li>Python</li>
+                <li>PyTorch</li>
+                <li>NumPy</li>
+                <li>SciPy</li>
+                <li>scikit-learn</li>
+                <li>OpenCV</li>
+                <li>Matplotlib</li>
+                <li>pandas</li>
+                <li>SQL</li>
+                <li>Git</li>
+                <li>LaTeX</li>
+            </ul>
+        </section>
+
+        <section id="blog" class="container section">
+            <h2>Latest posts</h2>
+            <ul class="post-list">
+                <li>
+                    <time datetime="2026-10-29">Oct 29, 2026</time>
+                    <a href="blog/hello-world.html">Hello, world</a>
+                </li>
+            </ul>
+            <p><a href="blog/index.html">All posts &rarr;</a></p>
+        </section>
+
+        <section id="contact" class="container section">
+            <h2>Contact</h2>
+            <p>The fastest way to reach me is Telegram.</p>
+            <ul class="contacts">
+                <li><a href="https://t.me/math_prog_help" target="_blank" rel="noopener"><i class="fab fa-telegram-plane" aria-hidden="true"></i> Telegram</a></li>
+                <li><a href="https://www.fiverr.com/azysk0" target="_blank" rel="noopener"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Fiverr</a></li>
+                <li><a href="https://github.com/AZysk0" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+                <li><a href="https://www.kaggle.com/artemzysko" target="_blank" rel="noopener"><i class="fab fa-kaggle" aria-hidden="true"></i> Kaggle</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Artem Zysko</p>
         </div>
-    </div>
+    </footer>
 
-    <div class="main-content">
-        <canvas id="animationCanvas"></canvas>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
     <script src="scripts/canvas.js"></script>
-
 </body>
 </html>
